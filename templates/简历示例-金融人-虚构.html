@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>示例简历 · 金融人（虚构）</title>
+<style>
+  :root {
+    --ink: #17222b;
+    --muted: #5a6672;
+    --line: #17222b;
+    --accent: #0e7a6e;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", sans-serif;
+    color: var(--ink);
+    font-size: 12.5px;
+    line-height: 1.5;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 15mm 17mm 13mm;
+    background: #fff;
+    position: relative;
+  }
+  .name { font-size: 26px; font-weight: 700; letter-spacing: 2px; margin: 0; }
+  .headline { color: var(--accent); font-weight: 600; font-size: 12.5px; margin: 3px 0 5px; letter-spacing: .3px; }
+  .contact { color: var(--muted); font-size: 11.5px; margin-bottom: 4px; }
+  .visa { display: inline-block; font-size: 12.5px; font-weight: 700; color: #fff; background: var(--accent); padding: 1px 10px 2px; border-radius: 10px; letter-spacing: .5px; vertical-align: 1px; }
+  .rule { border: none; border-top: 2.5px solid var(--line); margin: 8px 0 0; }
+  h2 { font-size: 12px; letter-spacing: 6px; color: var(--ink); margin: 14px 0 6px; padding-bottom: 2px; border-bottom: 1px solid #c7ccd1; }
+  p.summary { margin: 0; text-align: justify; }
+  .role { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin: 9px 0 2px; }
+  .role .title { font-weight: 700; font-size: 12.8px; }
+  .role .title .sub { font-weight: 600; color: var(--accent); }
+  .role .date { color: var(--muted); font-size: 11.5px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  ul { margin: 2px 0 0; padding-left: 15px; }
+  li { margin-bottom: 2.5px; text-align: justify; }
+  li::marker { color: var(--muted); }
+  .edu-item { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin: 5px 0 0; }
+  .edu-item .date { color: var(--muted); font-size: 11.5px; white-space: nowrap; }
+  .edu-detail { color: var(--muted); font-size: 11.8px; margin: 0 0 2px; }
+  .skills p { margin: 3px 0; }
+  .skills .label { display: inline-block; min-width: 70px; font-weight: 600; }
+  .footer-note { position: absolute; bottom: 8mm; left: 0; right: 0; text-align: center; color: #b0b8bf; font-size: 10px; letter-spacing: 1px; }
+  @media screen {
+    body { background: #e8eaec; padding: 24px 0; }
+    .page { box-shadow: 0 2px 14px rgba(0,0,0,.18); margin-bottom: 24px; }
+  }
+  @media print {
+    @page { size: A4; margin: 0; }
+    .page { page-break-after: always; }
+    .page:last-child { page-break-after: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <h1 class="name">李明远</h1>
+  <div class="headline">券商行业研究员 · 大消费行业 · 4 年卖方研究经验 · CPA / CFA Level II</div>
+  <div class="contact">limingyuan.demo@email.com &nbsp;·&nbsp; 138 0000 1234 &nbsp;·&nbsp; 上海 &nbsp;·&nbsp; <span class="visa">CPA 持证</span></div>
+  <hr class="rule">
+
+  <h2>个人定位</h2>
+  <p class="summary">4 年卖方大消费行业研究经验，覆盖食品饮料与美妆个护板块 <b>30+ 上市公司</b>，牵头完成 <b>12 篇</b>深度报告，其中 3 篇进入所内当年引用量前十；擅长渠道调研与数据交叉验证，独立搭建的白酒动销跟踪体系被 <b>20+ 买方机构</b>长期订阅。目标方向：买方消费研究 / 产业投资。</p>
+
+  <h2>工作经历</h2>
+
+  <div class="role">
+    <span class="title">华信证券研究所（虚构）｜<span class="sub">行业分析师 · 大消费组</span></span>
+    <span class="date">2022.07 – 至今</span>
+  </div>
+  <ul>
+    <li>独立覆盖食品饮料板块 <b>18 家</b>上市公司，年均产出深度报告 <b>4 篇</b>、点评与跟踪报告 <b>60+ 篇</b>；2024 年度所内新财富模拟评选大消费组排名 <b>第 2</b>。</li>
+    <li>搭建<b>白酒渠道动销周度跟踪体系</b>：整合经销商访谈、电商爬虫数据与终端价盘监测，输出周度动销简报，被 20+ 公募/私募买方长期订阅，成为组内标志性产品。</li>
+    <li>牵头完成《零糖饮料行业深度》等 <b>3 篇</b>获所内评级 A 的深度报告，其中 1 篇推动覆盖标的机构持仓季度环比提升 <b>40%</b>。</li>
+    <li>组织上市公司反向路演与产业专家电话会 <b>30+ 场</b>，服务重点客户 15 家，客户派点贡献组内前三。</li>
+  </ul>
+
+  <div class="role">
+    <span class="title">泓睿基金（虚构）｜<span class="sub">行业研究实习生 · 消费组</span></span>
+    <span class="date">2021.06 – 2022.05</span>
+  </div>
+  <ul>
+    <li>协助基金经理跟踪美妆个护板块，完成 <b>8 家</b>公司的三张表建模与盈利预测；独立撰写的国货美妆品牌对比研究被纳入组合调仓参考。</li>
+  </ul>
+
+  <div class="role">
+    <span class="title">早期经历｜<span class="sub">德永会计师事务所（虚构 · 审计）</span></span>
+    <span class="date">2020 暑期</span>
+  </div>
+  <ul>
+    <li>参与两家消费类上市公司年审，负责收入与存货循环底稿——财务尽调基本功来源。</li>
+  </ul>
+
+  <h2>教育背景</h2>
+  <div class="edu-item"><span><b>上海财经大学</b>｜金融学硕士 ｜ GPA 3.7/4.0（专业前 10%）</span><span class="date">2020 – 2022</span></div>
+  <p class="edu-detail">公司金融、财务报表分析、计量经济学均 A；研究生学业奖学金一等</p>
+  <div class="edu-item"><span><b>武汉大学</b>｜会计学学士</span><span class="date">2016 – 2020</span></div>
+  <p class="edu-detail">校级优秀毕业论文；辩论队主力，最佳辩手 3 次</p>
+
+  <h2>专业技能</h2>
+  <div class="skills">
+    <p><span class="label">专业工具</span> 财务建模（三张表/DCF）· Wind · Bloomberg · Python（数据爬取与清洗）· Excel VBA</p>
+    <p><span class="label">语言资质</span> 英语（CET-6 620 / 流利路演）｜ CPA 全科 · CFA Level II 通过 · 证券从业资格</p>
+  </div>
+
+  <div class="footer-note">示例简历 · 人物、公司与经历均为虚构 · 仅供教学演示</div>
+
+</div>
+
+</body>
+</html>

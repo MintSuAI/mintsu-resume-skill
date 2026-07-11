@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>简历模板（通用版）</title>
+<style>
+  :root {
+    --ink: #17222b;
+    --muted: #5a6672;
+    --line: #17222b;
+    --accent: #0e7a6e;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", sans-serif;
+    color: var(--ink);
+    font-size: 12.5px;
+    line-height: 1.5;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 15mm 17mm 13mm;
+    background: #fff;
+    position: relative;
+  }
+  .name { font-size: 26px; font-weight: 700; letter-spacing: 2px; margin: 0; }
+  .headline { color: var(--accent); font-weight: 600; font-size: 12.5px; margin: 3px 0 5px; letter-spacing: .3px; }
+  .contact { color: var(--muted); font-size: 11.5px; margin-bottom: 4px; }
+  .visa { display: inline-block; font-size: 12.5px; font-weight: 700; color: #fff; background: var(--accent); padding: 1px 10px 2px; border-radius: 10px; letter-spacing: .5px; vertical-align: 1px; }
+  .rule { border: none; border-top: 2.5px solid var(--line); margin: 8px 0 0; }
+  h2 { font-size: 12px; letter-spacing: 6px; color: var(--ink); margin: 14px 0 6px; padding-bottom: 2px; border-bottom: 1px solid #c7ccd1; }
+  p.summary { margin: 0; text-align: justify; }
+  .role { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin: 9px 0 2px; }
+  .role .title { font-weight: 700; font-size: 12.8px; }
+  .role .title .sub { font-weight: 600; color: var(--accent); }
+  .role .date { color: var(--muted); font-size: 11.5px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  ul { margin: 2px 0 0; padding-left: 15px; }
+  li { margin-bottom: 2.5px; text-align: justify; }
+  li::marker { color: var(--muted); }
+  .edu-item { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin: 5px 0 0; }
+  .edu-item .date { color: var(--muted); font-size: 11.5px; white-space: nowrap; }
+  .edu-detail { color: var(--muted); font-size: 11.8px; margin: 0 0 2px; }
+  .skills p { margin: 3px 0; }
+  .skills .label { display: inline-block; min-width: 70px; font-weight: 600; }
+  .tip { color: #9aa4ad; font-size: 11px; }
+  .footer-note { position: absolute; bottom: 8mm; left: 0; right: 0; text-align: center; color: #b0b8bf; font-size: 10px; letter-spacing: 1px; }
+  @media screen {
+    body { background: #e8eaec; padding: 24px 0; }
+    .page { box-shadow: 0 2px 14px rgba(0,0,0,.18); margin-bottom: 24px; }
+  }
+  @media print {
+    @page { size: A4; margin: 0; }
+    .page { page-break-after: always; }
+    .page:last-child { page-break-after: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <h1 class="name">【姓名】</h1>
+  <div class="headline">【一句话定位：目标职位 · 核心优势关键词 · 行业/领域】</div>
+  <div class="contact">【邮箱】 &nbsp;·&nbsp; 【电话】 &nbsp;·&nbsp; 【城市】 &nbsp;·&nbsp; <span class="visa">【身份/签证等加分项，没有可删】</span></div>
+  <hr class="rule">
+
+  <h2>个人定位</h2>
+  <p class="summary">【3-4 行的电梯陈述：你是谁（当前职级+领域）→ 最亮的 1-2 个差异化优势 → 能为目标岗位带来什么。写给招聘方 10 秒扫读用，避免形容词堆砌，用事实和数字说话。】</p>
+  <p class="tip">✍️ 公式：当前身份 + 差异化标签（双背景/稀缺技能/代表性成果）+ 与目标岗位的连接点</p>
+
+  <h2>工作经历</h2>
+
+  <div class="role">
+    <span class="title">【公司名】｜<span class="sub">【职位 · 职责定位】</span></span>
+    <span class="date">【2022.07 – 至今】</span>
+  </div>
+  <ul>
+    <li>【成果条目 1：动词开头 + 做了什么 + <b>量化结果</b>。最重要的放最前面，和目标 JD 关键词对齐。】</li>
+    <li>【成果条目 2：体现规模/增长的数字加粗，如「团队 <b>3 人 → 14 人</b>」「策略 <b>50+</b>」「转化率提升 <b>35%</b>」。】</li>
+    <li>【成果条目 3：项目主导类——「主导/搭建/从 0 到 1」+ 交付物 + 影响范围。】</li>
+    <li>【成果条目 4-5：每段经历 3-5 条为宜，最近一份最多，越早越精简。】</li>
+  </ul>
+  <p class="tip">✍️ 每条 = 动词 + 事 + 数字。删掉「负责」「参与」开头的流水账，改写成结果导向。</p>
+
+  <div class="role">
+    <span class="title">【上一家公司】｜<span class="sub">【职位】</span></span>
+    <span class="date">【2019.07 – 2022.06】</span>
+  </div>
+  <ul>
+    <li>【1-3 条，只保留和目标岗位相关的。】</li>
+  </ul>
+
+  <div class="role">
+    <span class="title">早期经历｜<span class="sub">【公司 A（职能）· 公司 B（职能）】</span></span>
+    <span class="date">【2018】</span>
+  </div>
+  <ul>
+    <li>【实习/早期经历合并成一行，一条带过。】</li>
+  </ul>
+
+  <h2>教育背景</h2>
+  <div class="edu-item"><span><b>【学校】</b>｜【学位·专业】 ｜ 【GPA/排名，亮眼才写】</span><span class="date">【2015 – 2019】</span></div>
+  <p class="edu-detail">【高分课程/奖学金/交换经历，一行带过，没有可删】</p>
+
+  <h2>专业技能</h2>
+  <div class="skills">
+    <p><span class="label">专业工具</span> 【技能按目标 JD 排序：最相关的放最前 · 用 · 分隔】</p>
+    <p><span class="label">语言资质</span> 【语言（带分数更有说服力）· 证书资质】</p>
+  </div>
+
+  <div class="footer-note">简历模板 · 配合 AI 使用：把目标 JD 和本模板一起发给 AI，让它按 JD 关键词重写每一条</div>
+
+</div>
+
+</body>
+</html>

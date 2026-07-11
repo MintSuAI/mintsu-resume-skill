@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>示例简历 · 运营人（虚构）</title>
+<style>
+  :root {
+    --ink: #17222b;
+    --muted: #5a6672;
+    --line: #17222b;
+    --accent: #0e7a6e;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", sans-serif;
+    color: var(--ink);
+    font-size: 12.5px;
+    line-height: 1.5;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: 15mm 17mm 13mm;
+    background: #fff;
+    position: relative;
+  }
+  .name { font-size: 26px; font-weight: 700; letter-spacing: 2px; margin: 0; }
+  .headline { color: var(--accent); font-weight: 600; font-size: 12.5px; margin: 3px 0 5px; letter-spacing: .3px; }
+  .contact { color: var(--muted); font-size: 11.5px; margin-bottom: 4px; }
+  .visa { display: inline-block; font-size: 12.5px; font-weight: 700; color: #fff; background: var(--accent); padding: 1px 10px 2px; border-radius: 10px; letter-spacing: .5px; vertical-align: 1px; }
+  .rule { border: none; border-top: 2.5px solid var(--line); margin: 8px 0 0; }
+  h2 { font-size: 12px; letter-spacing: 6px; color: var(--ink); margin: 14px 0 6px; padding-bottom: 2px; border-bottom: 1px solid #c7ccd1; }
+  p.summary { margin: 0; text-align: justify; }
+  .role { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin: 9px 0 2px; }
+  .role .title { font-weight: 700; font-size: 12.8px; }
+  .role .title .sub { font-weight: 600; color: var(--accent); }
+  .role .date { color: var(--muted); font-size: 11.5px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  ul { margin: 2px 0 0; padding-left: 15px; }
+  li { margin-bottom: 2.5px; text-align: justify; }
+  li::marker { color: var(--muted); }
+  .edu-item { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin: 5px 0 0; }
+  .edu-item .date { color: var(--muted); font-size: 11.5px; white-space: nowrap; }
+  .edu-detail { color: var(--muted); font-size: 11.8px; margin: 0 0 2px; }
+  .skills p { margin: 3px 0; }
+  .skills .label { display: inline-block; min-width: 70px; font-weight: 600; }
+  .footer-note { position: absolute; bottom: 8mm; left: 0; right: 0; text-align: center; color: #b0b8bf; font-size: 10px; letter-spacing: 1px; }
+  @media screen {
+    body { background: #e8eaec; padding: 24px 0; }
+    .page { box-shadow: 0 2px 14px rgba(0,0,0,.18); margin-bottom: 24px; }
+  }
+  @media print {
+    @page { size: A4; margin: 0; }
+    .page { page-break-after: always; }
+    .page:last-child { page-break-after: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <h1 class="name">王小雨</h1>
+  <div class="headline">用户增长运营 · 私域 + 内容双轮 · 5 年互联网运营经验 · 从 0 到 1 操盘手</div>
+  <div class="contact">wangxiaoyu.demo@email.com &nbsp;·&nbsp; 139 0000 5678 &nbsp;·&nbsp; 杭州 &nbsp;·&nbsp; <span class="visa">AI 工具深度用户</span></div>
+  <hr class="rule">
+
+  <h2>个人定位</h2>
+  <p class="summary">5 年互联网用户运营经验，横跨内容平台与电商 SaaS 两个赛道：在虚构头部内容社区从 0 搭建创作者成长体系（月活跃创作者 <b>8k → 4.2 万</b>），在电商 SaaS 公司操盘私域增长（企微私域 <b>12 万</b>用户、复购率提升 <b>28%</b>）。近一年将 AI 工具引入日常运营，内容生产与用户分层效率提升 <b>3 倍</b>。目标方向：用户增长负责人 / AI + 运营。</p>
+
+  <h2>工作经历</h2>
+
+  <div class="role">
+    <span class="title">云涧科技（虚构 · 内容社区 App）｜<span class="sub">高级用户运营 · 创作者生态</span></span>
+    <span class="date">2022.03 – 至今</span>
+  </div>
+  <ul>
+    <li>从 0 到 1 搭建<b>创作者成长体系</b>（等级、激励、流量扶持三件套），月活跃创作者 <b>8,000 → 42,000</b>，头部创作者留存率 <b>85%</b>，内容供给量翻 4 倍。</li>
+    <li>主导 <b>AI 化运营改造</b>：用 AI 完成选题库搭建、创作者周报生成与用户分层标签清洗，单人可维护创作者数量从 200 提升至 <b>600+</b>，组内推广后节约 2 个 HC。</li>
+    <li>策划年度创作者大赛等 <b>S 级活动 3 场</b>，最高单场带来新增投稿 <b>12 万篇</b>、站外曝光 5,000 万，活动 ROI 连续两年组内第一。</li>
+    <li>搭建创作者流失预警模型（活跃度+发布频次+互动率三维打分），高危创作者挽回率 <b>31%</b>。</li>
+  </ul>
+
+  <div class="role">
+    <span class="title">橙拾网络（虚构 · 电商 SaaS）｜<span class="sub">用户运营专员 → 私域运营主管</span></span>
+    <span class="date">2019.07 – 2022.02</span>
+  </div>
+  <ul>
+    <li>操盘企微私域从 0 起盘：设计导流路径与 SOP 话术库，两年沉淀私域用户 <b>12 万</b>，私域贡献 GMV 占比从 0 做到 <b>18%</b>。</li>
+    <li>搭建会员分层运营体系（RFM 模型 + 自动化触达），核心会员复购率提升 <b>28%</b>，年度续费率提升 11 个百分点。</li>
+    <li>晋升主管后带 3 人小组，负责 2 条产品线的用户全生命周期运营。</li>
+  </ul>
+
+  <div class="role">
+    <span class="title">早期经历｜<span class="sub">校园自媒体「雨说」主理人（公众号 + B 站）</span></span>
+    <span class="date">2017 – 2019</span>
+  </div>
+  <ul>
+    <li>两年做到公众号粉丝 <b>5 万</b>、单篇最高阅读 20 万+——内容手感与用户洞察的起点。</li>
+  </ul>
+
+  <h2>教育背景</h2>
+  <div class="edu-item"><span><b>华中师范大学</b>｜传播学学士</span><span class="date">2015 – 2019</span></div>
+  <p class="edu-detail">校新媒体中心负责人；校级优秀毕业生</p>
+
+  <h2>专业技能</h2>
+  <div class="skills">
+    <p><span class="label">专业工具</span> AI 工具链（Claude / GPT / 扣子）· SQL 基础 · 企微 SCRM · 飞书多维表格 · 千瓜/新抖数据平台</p>
+    <p><span class="label">方法论</span> 用户分层（RFM）· AARRR 增长模型 · 活动策划全案 · 私域 SOP 设计</p>
+  </div>
+
+  <div class="footer-note">示例简历 · 人物、公司与经历均为虚构 · 仅供教学演示</div>
+
+</div>
+
+</body>
+</html>
