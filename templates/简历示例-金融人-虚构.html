@@ -5,6 +5,12 @@
 <title>示例简历 · 金融人（虚构）</title>
 <style>
   :root {
+    /* ── 密度旋钮：整份简历只调这一个数，字号与所有间距等比缩放 ──
+       页面留白多、内容撑不满 → 调大（16.5px / 17px）
+       内容太多、挤到第二页   → 调小（14px / 13.5px）
+       其余样式一律不用动。                                     */
+    --fs: 15.5px;
+
     --ink: #17222b;
     --muted: #5a6672;
     --line: #17222b;
@@ -15,8 +21,8 @@
   body {
     font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", sans-serif;
     color: var(--ink);
-    font-size: 12.5px;
-    line-height: 1.5;
+    font-size: var(--fs);
+    line-height: 1.6;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
@@ -28,26 +34,27 @@
     background: #fff;
     position: relative;
   }
-  .name { font-size: 26px; font-weight: 700; letter-spacing: 2px; margin: 0; }
-  .headline { color: var(--accent); font-weight: 600; font-size: 12.5px; margin: 3px 0 5px; letter-spacing: .3px; }
-  .contact { color: var(--muted); font-size: 11.5px; margin-bottom: 4px; }
-  .visa { display: inline-block; font-size: 12.5px; font-weight: 700; color: #fff; background: var(--accent); padding: 1px 10px 2px; border-radius: 10px; letter-spacing: .5px; vertical-align: 1px; }
-  .rule { border: none; border-top: 2.5px solid var(--line); margin: 8px 0 0; }
-  h2 { font-size: 12px; letter-spacing: 6px; color: var(--ink); margin: 14px 0 6px; padding-bottom: 2px; border-bottom: 1px solid #c7ccd1; }
+  .name { font-size: 2.05em; font-weight: 700; letter-spacing: .08em; line-height: 1.15; margin: 0; }
+  .headline { color: var(--accent); font-weight: 600; font-size: 1em; margin: .3em 0 .4em; letter-spacing: .02em; }
+  .contact { color: var(--muted); font-size: .92em; margin-bottom: .3em; }
+  .visa { display: inline-block; font-size: 1em; font-weight: 700; color: #fff; background: var(--accent); padding: .08em .8em .16em; border-radius: 1em; letter-spacing: .04em; vertical-align: 1px; }
+  .rule { border: none; border-top: 2.5px solid var(--line); margin: .6em 0 0; }
+  h2 { font-size: .96em; letter-spacing: .5em; color: var(--ink); margin: 1.3em 0 .55em; padding-bottom: .15em; border-bottom: 1px solid #c7ccd1; }
   p.summary { margin: 0; text-align: justify; }
-  .role { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin: 9px 0 2px; }
-  .role .title { font-weight: 700; font-size: 12.8px; }
+  .role { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin: .9em 0 .2em; }
+  .role .title { font-weight: 700; font-size: 1.03em; }
   .role .title .sub { font-weight: 600; color: var(--accent); }
-  .role .date { color: var(--muted); font-size: 11.5px; white-space: nowrap; font-variant-numeric: tabular-nums; }
-  ul { margin: 2px 0 0; padding-left: 15px; }
-  li { margin-bottom: 2.5px; text-align: justify; }
+  .role .date { color: var(--muted); font-size: .92em; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  ul { margin: .2em 0 0; padding-left: 1.2em; }
+  li { margin-bottom: .34em; text-align: justify; }
   li::marker { color: var(--muted); }
-  .edu-item { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin: 5px 0 0; }
-  .edu-item .date { color: var(--muted); font-size: 11.5px; white-space: nowrap; }
-  .edu-detail { color: var(--muted); font-size: 11.8px; margin: 0 0 2px; }
-  .skills p { margin: 3px 0; }
-  .skills .label { display: inline-block; min-width: 70px; font-weight: 600; }
-  .footer-note { position: absolute; bottom: 8mm; left: 0; right: 0; text-align: center; color: #b0b8bf; font-size: 10px; letter-spacing: 1px; }
+  .edu-item { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin: .45em 0 0; }
+  .edu-item .date { color: var(--muted); font-size: .92em; white-space: nowrap; }
+  .edu-detail { color: var(--muted); font-size: .94em; margin: 0 0 .15em; }
+  .skills p { margin: .3em 0; }
+  .skills .label { display: inline-block; min-width: 5.6em; font-weight: 600; }
+  .tip { color: #9aa4ad; font-size: .88em; }
+  .footer-note { position: absolute; bottom: 8mm; left: 0; right: 0; text-align: center; color: #b0b8bf; font-size: .8em; letter-spacing: 1px; }
   @media screen {
     body { background: #e8eaec; padding: 24px 0; }
     .page { box-shadow: 0 2px 14px rgba(0,0,0,.18); margin-bottom: 24px; }
